@@ -2,3 +2,6 @@ Useful links
 
 Flexy box tool:
 http://the-echoplex.net/flexyboxes/
+
+IconMoon - Icons generator
+https://icomoon.io/app/#/select/font
