@@ -1,5 +1,8 @@
 Useful links
 
+Useful GIT manual
+http://rogerdudler.github.io/git-guide/
+
 Flexy box tool:
 http://the-echoplex.net/flexyboxes/
 
