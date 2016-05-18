@@ -1,0 +1,24 @@
+html{
+	font-stretch: 15px;
+}
+
+.container{
+	display:block;
+	flex-direction: row-reverse;
+}
+.b1,
+.b2,
+.b3{
+	font-size: 3rem;
+	padding:20px 0;
+	text-align: center;
+}
+.b1{
+	background-color: yellow;
+}
+.b2{
+	background-color: blue;
+}
+.b3{
+	background-color: red;
+}
