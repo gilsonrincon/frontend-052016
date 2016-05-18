@@ -7,12 +7,14 @@ body{
 	margin:0;
 	padding:0;
 }
-.wrapper{
-	display:flex;
-}
+
 .container{
-	display:flex;
 }
+
+.icon-menu{
+	display: none;
+}
+
 .b1,
 .b2,
 .b3{
@@ -28,5 +30,15 @@ body{
 }
 .b3{
 	background-color: red;
+}
 
+#btMenu{
+	position: absolute;
+	font-size: 2rem;
+	background-color: rgba(255,255,255,.7);
+	border-radius: 50% 50%;
+	padding:10px;
+	top:10px;
+	left:10px;
+	cursor: pointer;
 }
