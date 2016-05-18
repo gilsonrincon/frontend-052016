@@ -1,10 +1,17 @@
 html{
 	font-stretch: 15px;
+	margin:0;
+	padding:0;
 }
-
+body{
+	margin:0;
+	padding:0;
+}
+.wrapper{
+	display:flex;
+}
 .container{
-	display:block;
-	flex-direction: row-reverse;
+	display:flex;
 }
 .b1,
 .b2,
@@ -21,4 +28,5 @@ html{
 }
 .b3{
 	background-color: red;
+
 }
