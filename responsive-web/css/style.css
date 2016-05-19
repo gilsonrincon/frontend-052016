@@ -1,0 +1,157 @@
+/*
+We are setting all default values for most of the elements
+*/
+html{
+	font-size:15px;
+}
+
+html,
+body,
+div,
+article,
+header,
+footer,
+section{
+	padding:0;
+	margin:0;
+}
+
+/* header */
+header{
+	background-image: url(../img/header.jpg);
+	height: 200px;
+	display:flex;
+	justify-content: space-between;
+}
+
+/* Logo */
+header .logo{
+	padding: 25px 30px;∫
+}
+header .logo img{
+	width:150px;
+	height: auto;
+}
+
+/* menu */
+#btMenu{
+	display:none;
+}
+header .menu ul{
+	padding: 25px 40px 0 0;
+	list-style: none;
+	display:block;
+	font-size: 2rem;
+}
+header .menu ul li{
+	display:inline;
+}
+header .menu ul li a{
+	text-decoration: none;
+	border-radius:5px;
+	color: white;
+	background-color:rgba(0,0,0,.5);
+	padding:10px;
+}
+
+/* Content */
+section.main{
+	padding:30px;
+	font-size: 2rem;
+}
+
+/* Footer */
+footer{
+	display:flex;
+	justify-content: space-around;
+	background-color: peru;
+	font-size: 1.5rem;
+	color:white;
+	padding-bottom: 20px;
+}
+footer article{
+	width: 20%;
+}
+footer .about-us{
+	width: 45%;
+}
+footer .footer-menu ul{
+	list-style: none;
+}
+footer .footer-menu ul li a{
+	text-decoration:none;
+	color: white;
+}
+
+
+@media (max-width:960px){
+	footer{
+		flex-wrap: wrap;
+	}
+	footer .about-us{
+		width: 90%;
+	}
+}
+
+@media (max-width:768px){
+	header{
+		display: block;
+	}
+	header .menu ul{
+		display:none;
+	}
+	header .logo{
+		text-align: center;
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#btMenu{
+		font-size: 3rem;
+		color:white;
+		border-radius: 50%;
+		background-color:rgba(0,0,0,.5);
+		padding:5px;
+		display:block;
+		position: fixed;
+		top: 15px;
+		right: 15px;
+	}
+
+	footer{
+		display:block;
+		text-align:center;
+		padding-top:15px;
+	}
+	footer article{
+		width: 90%;
+		margin: 10px auto;
+	}
+	footer .footer-menu h2,
+	footer .social-networks h2{
+		display:none;
+	}
+	footer .footer-menu ul li{
+		display: inline;
+		margin: auto 10px;
+	}
+}
+
+@media (max-width:480px){
+	html{
+		font-size: 20px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
