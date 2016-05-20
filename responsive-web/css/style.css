@@ -94,6 +94,13 @@ footer .footer-menu ul li a{
 }
 
 @media (max-width:768px){
+	input[type="checkbox"]{
+		zoom:3;
+	}
+	input[type="text"]{
+		zoom:3;
+	}
+
 	header{
 		display: block;
 	}
@@ -117,6 +124,23 @@ footer .footer-menu ul li a{
 		top: 15px;
 		right: 15px;
 		cursor:pointer;
+	}
+
+	ul#menu{
+		display: none;
+		position: fixed;
+		top:45px;
+		right: 10px;
+		z-index:1;		
+		padding: 10px 5px;
+		background-color: rgba(0,0,0,.5);
+	}
+	ul#menu li{
+		display: block;
+	}
+	ul#menu li a{
+		background-color: transparent;
+		text-align: left;
 	}
 
 	footer{
