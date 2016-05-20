@@ -116,6 +116,7 @@ footer .footer-menu ul li a{
 		position: fixed;
 		top: 15px;
 		right: 15px;
+		cursor:pointer;
 	}
 
 	footer{
