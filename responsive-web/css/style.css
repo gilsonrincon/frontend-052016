@@ -1,4 +1,4 @@
-/*
+			/*
 We are setting all default values for most of the elements
 */
 html{
@@ -169,6 +169,26 @@ footer .footer-menu ul li a{
 }
 
 
+/** Styles contact form **/
+.main input{
+	display:block;
+	margin: 15px auto;
+}
+.main input[type="text"],
+.main input[type="email"]{
+	width: 30%;
+}
+
+@media (max-width:768px){
+	.main input{
+		zoom: 4;
+
+	}
+	.main input[type="text"],
+	.main input[type="email"]{
+		width: 95%;
+	}
+}
 
 
 
