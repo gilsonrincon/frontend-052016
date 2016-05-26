@@ -8,3 +8,13 @@ http://the-echoplex.net/flexyboxes/
 
 IconMoon - Icons generator
 https://icomoon.io/app/
+
+Bootstrap
+http://getbootstrap.com/
+http://getbootstrap.com/getting-started/#download
+
+Normalizer
+https://necolas.github.io/normalize.css/
+
+Modernizr
+https://modernizr.com/
