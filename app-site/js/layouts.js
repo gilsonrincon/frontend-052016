@@ -13,21 +13,16 @@ function toolBox(){
 	html.append('<li><a id="btNewPage" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span>New Page</a></li>');
 	$('.admin-btns').append(html);
 
+	html = $('<div id="editPageMenu" class="dropdown">').load('html-components/editPageMenu.html');
+	$('.admin-btns').append(html);
+	
 	$('#btNewPage').click(function(){
 		if($('#newPageModal').length<1){
 			$('body').append(newPageModal());
 		}
 
 		$('#newPageModal').modal('show');
+		
 		return false;
-
-
-
-
-		$('#main').append(newPage(3,'xs'));
-		var alert=$('<div class="alert alert-success">');
-		alert.text('New page created');
-		$('body').prepend(alert);
-		alert.fadeOut(3000);
 	});
 }

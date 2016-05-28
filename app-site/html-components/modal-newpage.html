@@ -1,0 +1,79 @@
+<div class="modal-dialog">
+  <div class="modal-content">
+     <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">New Page</h4>
+     </div>
+     <div class="modal-body">
+        <p>
+        	<form>
+        		<input id="txtNColumns" type="text" placeholder="# or columns">
+        		<select name="" id="slColumnType">
+        			<option value="xs">xs</option>
+        			<option value="sm">sm</option>
+        			<option value="md">md</option>
+        			<option value="lg">lg</option>
+        		</select>
+        	</form>
+        </p>
+     </div>
+     <div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+     <button id="save" type="button" class="btn btn-primary">Save changes</button></div>
+  </div>
+  <!-- /.modal-content -->
+</div>
+<!-- /.modal-dialog -->
+
+<script>
+	//Event handler for save button in new tab modal
+	$("div#newPageModal button#save").click(function(){
+		var nc, ctype;
+		nc = $('#newPageModal #txtNColumns').val();
+		ctype = $('#newPageModal #slColumnType').val();
+
+		$('#main').append(newPage(nc,ctype));
+		$('#newPageModal').modal('hide');
+		var alert=$('<div class="alert alert-success">');
+		alert.text('New page created');
+		$('body').prepend(alert);
+		alert.fadeOut(3000);
+
+		//Adding a new item into the edit page menu
+		$('#editPageMenu ul').append('<li data-page="'+nPages+'" id="edit_page'+nPages+'"><a href="#">Edit Page #'+nPages+'</a></li>');
+
+		$('#editPageMenu ul li').click(function(){
+			if($('#editPageModal').length<1){
+				var html= $('<div data-page="'+$(this).data('page')+'" id="editPageModal" class="modal fade" tabindex="-1" role="dialog">').load('html-components/editPageModal.html');
+				$('body').append(html);
+			}
+			
+			$('#editPageModal').modal('show');
+			$('#editPageModal').data('page',$(this).data('page'));
+
+			$('#editPageModal form').html('');
+			$('#page'+$(this).data('page')+' > div').each(function(){
+				$('#editPageModal form').append($('<textarea>'));
+			});
+
+			return false;
+		});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	});
+</script>
