@@ -1,0 +1,29 @@
+LOSS Main page:
+http://lesscss.org/
+
+Install NodeJS:
+https://nodejs.org/
+
+LESS Plugins
+http://lesscss.org/usage/#plugins-list-of-less-plugins
+
+Install LESS
+npm install less
+
+Complile LESS files
+lessc styles.less style.css
+
+==================================================================================================
+Add prefix:
+Installing Autoprefixer plugin: https://github.com/less/less-plugin-autoprefix
+npm install -g less-plugin-autoprefix
+lessc styles.less --autoprefix="IE 6, IE 7, IE 8, IE 9, Firefox < 20" > styles.prefixed.css
+
+==================================================================================================
+Compress CSS
+Installing Clean CSS plugin: https://github.com/less/less-plugin-clean-css
+npm install -g less-plugin-clean-css
+lessc styles.less --clean-css > styles.min.css
+
+We can also compress CSS files
+lessc styles.prefixed.css --clean-css > styles.prefixed.min.css

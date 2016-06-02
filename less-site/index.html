@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<link rel="stylesheet/less" type="text/css" href="css/styles.less" />
+
+	<script>
+		//Adding some plugins: plugins-list-of-less-plugins
+
+
+		//LESS configuration: http://lesscss.org/usage/#using-less-in-the-browser-setting-options
+		less = {
+			async: true, // true | false
+			env: 'development', //'development' | 'production'
+			dumpLineNumbers: 'all', // '' | 'comments' | 'mediaquery' | 'all'
+			errorReporting: 'html', //'console' | 'html' | 'function'
+			fileAsync: true, // true | false
+			logLevel: 2, // 0: Nothing | 1: Errors | 2: Information and errors
+			poll: 1000, //Amount of time (milliseconds), between polls while in watch mode
+			relativeUrls: false, //tru | folse
+			globalVars: {}, //object with variables
+			useFileCache: false, //true | false
+		};
+	</script>
+
+	<script src="less/less.min.js" type="text/javascript"></script>
+
+	<script>
+		less.watch();
+	</script>
+</head>
+<body>
+	<h1>This is a test</h1>
+</body>
+</html>
