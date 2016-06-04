@@ -18,3 +18,9 @@ https://necolas.github.io/normalize.css/
 
 Modernizr
 https://modernizr.com/
+
+Official web site for SASS
+http://sass-lang.com/
+
+SASS with NodeJS
+https://github.com/sass/node-sass
