@@ -2,8 +2,32 @@
 
 @bgcolor: #cccccc;
 @fontcolor: peru;
+@mainBGColor: yellow;
+@fZize: 15px;
 
 body{
 	background-color: @bgcolor;
 	color: @fontcolor;
+}
+
+.container{
+	background-color: @mainBGColor;
+	&-top{
+		display:flex;
+
+		.container-top-header{
+
+			h1{
+				font-size: @fZize;
+			}
+		}
+	}
+
+	&-content{
+		&-main{
+			p{
+				text-align: justify;
+			}
+		}
+	}
 }
